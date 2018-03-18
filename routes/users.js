@@ -55,7 +55,7 @@ router.post('/login', function(req, res, next) {
       next(err);
     }
     if(!user){
-      return res.status(494).send();
+      return res.status(494).send("no existe este usuario/la constraseña es incorrecta");
     }
     return res.status(200).send('estas loegadisimo!');
   });
